@@ -22,6 +22,8 @@ foreground = (255, 255, 0)
 
 show_output_image = True
 
+also_add_txt = False
+
 verbose = False
 
 
@@ -39,6 +41,7 @@ def print_help():
     print ' -C ... take color from following arguments and not from input image'
     print ' -B <r,g,b_of_background>'
     print ' -F <r,g,b_of_foreground>'
+    print ' -a also output as text file'
     print ' -n ... do not show output image'
     print ' -v ... be verbose'
     print
@@ -46,7 +49,7 @@ def print_help():
 
 
 try:
-    opts, args = getopt.getopt(sys.argv[1:], 'hi:o:c:s:t:T:f:CF:B:S:vn')
+    opts, args = getopt.getopt(sys.argv[1:], 'hi:o:c:s:t:T:f:CF:B:S:vna')
 except getopt.GetoptError as e:
     print 'ERROR: something went wrong: ' + str(e)
     print
@@ -79,6 +82,8 @@ for opt, arg in opts:
         font_size = int(arg)
     elif opt == '-n':
         show_output_image = False
+    elif opt == '-a':
+        also_add_txt = True
     elif opt == '-v':
         verbose = True
 
@@ -95,6 +100,7 @@ if verbose:
     print 'background: %d, %d, %d' % (background[0], background[1], background[2])
     print 'foreground: %d, %d, %d' % (foreground[0], foreground[1], foreground[2])
     print 'show output: %s' % show_output_image
+    print 'also output ad text: %s' % also_add_txt
     print 'verbose: True'
     print
 
@@ -139,6 +145,9 @@ if verbose:
 
 output_image = Image.new("RGBA", (output_width, output_height))
 
+if also_add_txt:
+    output_text_file = open(output_file + '.txt', 'w')
+
 text = open(text_file).read()
 text_len = len(text)
 text_position = 0
@@ -169,6 +178,10 @@ def put_text(region, color):
     region_box = region.size
     xy = (region_box[0] / 2.0 - text_box[0] / 2.0, region_box[1] / 2.0 - text_box[1] / 2.0)
     draw.text(xy, text[text_position % text_len], fill=color, font=font)
+
+    if also_add_txt:
+        output_text_file.write(text[text_position % text_len])
+
     text_position += 1
 
 
@@ -199,6 +212,9 @@ def draw_black(x, y):
     region = output_image.crop(box)
     region = region.point(lambda p: background)
 
+    if also_add_txt:
+        output_text_file.write(' ')
+
     output_image.paste(region, box)
 
 
@@ -225,6 +241,9 @@ for y in range(0, rows):
     if verbose:
         print '%.2f%% done ...' % ((float(y) / rows) * 100)
 
+    if also_add_txt:
+        output_text_file.write('\n')
+
 
 if show_output_image:
     output_image.show()
@@ -232,4 +251,6 @@ if show_output_image:
 
 output_image.save(output_file)
 
+if also_add_txt:
+    output_text_file.close()
 
