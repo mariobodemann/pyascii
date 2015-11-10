@@ -1,0 +1,29 @@
+    -      --layout         
+   :d      efaulttit        
+   le       :Speakers       
+   pe       rmalink:/       
+   sp        eakers/mo      
+   dal       :all---{%i     
+   nc         ludetop-s     
+  ectio        n.html%}{    
+ %ifsite       .showSessi   
+ons%}{%in       cludespea   
+kers-list       .html%}{%e  
+l se%}{%i        ncludespe  
+akers-lis         t-2.html% 
+}{%endif%         }---layout
+ :defaul           ttitle:Ha
+  ckath           onpermalin
+   k:/            hackathon 
+   /--           -{%includ  
+   eto           p-section  
+   .ht          ml%}{%incl  
+   ude         about-hack   
+  atho         n.html%}{    
+  %inc        ludejudges    
+  .html       %}{%inclu     
+  depri      zes.html%}     
+  {%inc     ludehackat      
+  hon-l     ocation.h       
+  tml%}    {%includep       
+   art     ners.html        

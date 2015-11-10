@@ -1,0 +1,29 @@
+    -      --layou          
+    t      :defau           
+   lt       title           
+   :S       peakers         
+   pe        rmalink:       
+   /sp        eakers/m      
+   od         al:all---     
+  {%inc        ludetop-s    
+ ection.       html%}{%i    
+fsite.sho       wSessions   
+% }{%incl        udespeak   
+e rs-list        .html%}{%  
+e lse%}{%         includesp 
+eakers-li         st-2.htm  
+ l%}{%en           dif%}--  
+  -layo           ut:defau  
+   ltt            itle:Hac  
+   kat           honpermal  
+   ink           :/hackath  
+   on/          ---{%inclu  
+   det          op-sectio   
+   n.h         tml%}{%in    
+   clu        deabout-ha    
+  ckat        hon.html%     
+  }{%i       ncludejudg     
+  es.ht      ml%}{%inc      
+  ludep     rizes.htm       
+  l%}{%    includehac       
+   kat     hon-locat        

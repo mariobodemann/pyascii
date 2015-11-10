@@ -1,0 +1,67 @@
+          -              --layout:defaulttit                    
+        le:              Speakerspermalink:/s                   
+        peak             ers/modal:all---{%inc                  
+        lude             top-section.html%}{%if                 
+        site              .showSessions%}{%inclu                
+        desp              eakers-list.html%}{%el                
+        se%}               {%includespeakers-list               
+        -2.h                tml%}{%endif%}---layo               
+        ut:d                efaulttitle:Hackathonp              
+        erma                 link:/hackathon/---{%i             
+        nclu                 detop-section.html%}{%             
+        incl                  udeabout-hackathon.htm            
+       l%}{%i                  ncludejudges.html%}{%            
+       includ                  eprizes.html%}{%includ           
+        ehac                    kathon-location.html%}          
+        {%inc                   ludepartners.html%}---          
+     layout:def                  aulttitle:Eventschedul         
+    epermalink:/s                 chedule/image:schedul         
+   e.jpg---{%inclu                detop-section.html%}{%        
+  includeschedule.h                tml%}<divid="disqus_th       
+ read "></div><scri                 pttype="text/javascri       
+ pt" >/***CONFIGURAT                IONVARIABLES:EDITBEFOR      
+EPASTINGINTOYOURWEBP                 AGE***/vardisqus_short     
+nam e='{{site.discusS                hortName}}';//required     
+:re placeexamplewithy                 ourforumshortname/***D    
+ON' TEDITBELOWTHISLIN                  E***/(function(){vard    
+sq= document.createEl                  ement('script');dsq.ty   
+pe= 'text/javascript'                   ;dsq.async=true;dsq.sr  
+c=' //'+disqus_shortn                   ame+'.disqus.com/embed  
+.js ';(document.getEl                    ementsByTagName('head' 
+ )[0 ]||document.get                      ElementsByTagName('bo 
+ dy') [0]).appendChi                      ld(dsq);})();</script>
+  <noscript>Pleasee                       nableJavaScripttoviewt
+  he<ahref="http:/                         /disqus.com/?ref_nosc
+   ript">comments                         poweredbyDisqus.</a></
+     noscript></                          script><!--BeginSpeake
+       rsList-                            -><sectionid="speaker 
+      s"class=                           "speakers"><divclass=" 
+      content-                           wrapper"><divclass="c  
+      ol-lg-10                          col-lg-offset-1"><divc  
+      lass="ro                         wtext-leftappear-anima   
+      tion-tri                         gger">{%forspeakerins    
+      ite.data                        .speakers%}<divclass="    
+      effect-w                        rapperappear-animatio     
+      ncol-md-                       4col-sm-6col-xs-12"><d     
+      ivclass=                      "lily-effectribbon-act      
+      ivator">                      <divclass="lily-head"d      
+      ata-togg                     le="modal"data-target=       
+      "#speake                     rDetail-{{speaker.id}        
+      }"><figur                   eclass="waves-effectwa        
+      ves-block                  waves-light"style="bac         
+      kground-i                  mage:url({{site.baseur         
+      l|append:                 '/img/people/'|append:          
+      speaker.t                 humbnailUrl}})"><divc           
+      lass="ove                rlaysolid-overlay"></d           
+      iv>{%ifsp               eaker.ribbon!=null%}<u            
+      lclass="r               ibbon-wrapper">{%forri            
+      bboninspe              aker.ribbon%}<liclass=             
+     "{{ribbon[              "abbr"]|downcase}}"><              
+     pclass="ri             bbonabbr">{{ribbon["ab              
+     br"]}}</p>            <pclass="ribbonfull-ti               
+     tle">{{rib            bon["title"]}}</p></li               
+     >{%endfor%           }</ul>{%endif%}{%ifsit                
+     e.showSess           ions%}<figcaption><h2c                
+     lass="name          ">{{speaker.name}}<spa                 
+      n>{{speak          er.surname}}</span></                  
+       h2><pcl           ass="position">{{spe                   
