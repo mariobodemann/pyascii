@@ -21,7 +21,6 @@ background = (0, 0, 0, 0)
 foreground = (255, 255, 0)
 
 show_output_image = True
-
 also_add_txt = False
 
 verbose = False
@@ -92,7 +91,7 @@ if verbose:
     print 'output: %s' % output_file
     print 'columns: %d' % columns
     print 'scale: %f' % scale
-    print 'threshold: % f' % threshold
+    print 'threshold: %f' % threshold
     print 'text-file: %s' % text_file
     print 'font-name: %s' % font_name
     print 'font-size: %d' % font_size
@@ -244,13 +243,10 @@ for y in range(0, rows):
     if also_add_txt:
         output_text_file.write('\n')
 
-
 if show_output_image:
     output_image.show()
-
 
 output_image.save(output_file)
 
 if also_add_txt:
     output_text_file.close()
-
