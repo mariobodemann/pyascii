@@ -1,0 +1,562 @@
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                             -          --layout:defa                               
+                                                                                                                                            ul          ttitle:Speakers                             
+                                                                                                                                            per         malink:/speakers                            
+                                                                                                                                            /m           odal:all---{%in                            
+                                                                                                                                            cl           udetop-section.h                           
+                                                                                                                                            tml           %}{%ifsite.showS                          
+                                                                                                                                            ess            ions%}{%include                          
+                                                                                                                                           spea            kers-list.html%}                         
+                                                                                                                                            {%e             lse%}{%includes                         
+                                                                                                                                           peake            rs-list-2.html%}                        
+                                                                                                                                           {%en              dif%}---layout:d                       
+                                                                                                                                           efau              lttitle:Hackatho                       
+                                                                                                                                          npermal             ink:/hackathon/-                      
+                                                                                                                                        --{%include            top-section.htm                      
+                                                                                                                                       l%}{%includea           bout-hackathon.h                     
+                                                                                                                                       tm l%}{%inclu            dejudges.html%}{                    
+                                                                                                                                      %includeprizes.            html%}{%include                    
+                                                                                                                                      ha ckathon-loca            tion.html%}{%inc                   
+                                                                                                                                      lu departners.h             tml%}---layout:d                  
+                                                                                                                                      ef aulttitle:Ev             entscheduleperma                  
+                                                                                                                                      li nk:/schedule              /image:schedule.                 
+                                                                                                                                      jp g---{%includ               etop-section.ht                 
+                                                                                                                                      ml% }{%include                schedule.html%}<                
+                                                                                                                                       div id="disqu                 s_thread"></div                
+                                                                                                                                        ><scripttyp                  e="text/javascr                
+                                                                                                                                         ipt">/***                   CONFIGURATIONVA                
+                    RIABLE S:EDITB    EFOREPA     STINGIN                 TOYOUR               WEB                                         PAGE*                    **/vardisqus_sho                
+                   rtname= '{{site.  discusSh     ortName}                }';//r               equ                                         ired:                    replaceexamplew                 
+                  ithyourf orumshortname/***      DON'TEDI  TBELO WTH  ISLINE*** /(fun  ction(){var                                        dsq=d                   ocument.createEl                 
+                  eme      nt(' script')          ;ds  q.type='text/j  avascr    ipt';d sq.async=tru                                       e;dsq                   .src='//'+disqu                  
+                  s_s hortname+  '.disq us.co     m/e  mbed.js ';(document.getElemen tsByTa gName('                                        head'                  )[0]||document.g                  
+                  etE lementsBy  TagNam e('bo     dy'  )[0]).appendChild( dsq);})();</script><nosc                                         ript>                 PleaseenableJava                   
+                  Scr ipttoview the<ahref="ht     tp:  //disqus.com/?ref_ nos   cript">c ommentspo                                        weredb                 yDisqus.</a></no                   
+                  scri pt></script><!--Be gin     Speakers List -- ><sec  tio   nid=  " sp eakers"c                                        lass=                "speakers"><divc                    
+                  lass="content-wra  pper"><d     ivclass= "col-lg  -10c  ol-    lg-off set-1"><divc                                      lass="                rowtext-leftappe                    
+                    ar-animation-t    rigger"     >{%for    speake  rins  ite     .data .spea  kers                                       %}<divc              lass="effect-wra                     
+                                                                                                                                          pperap              pear-animationco                      
+                                                                                                                                          l-md-4c             ol-sm-6col-xs-12                      
+                                                                                                                                          "><divc            lass="lily-effec                       
+                   tribb               on -a             ctiv    ato    r">    <divc                                                      lass="l            ily-head"data-to                       
+                   ggle="m             od al            "data-  target ="#sp   eaker                                                      Detail-           {{speaker.id}}">                        
+                   <f   ig   ure   c lass    =  "w          av es-  ef   fec   tw                                                         aves-bl           ockwaves-light"                         
+                   st   yl  e="ba ckgroun d- image:         ur l(   {{   sit   e.ba                                                       seurl|a          ppend:'/img/peop                         
+                   le/'|ap pe   nd:sp  ea ke r.  th         um bn   ai   lUr   l}})"                                                      ><divcl         ass="overlaysoli                          
+                   d-overl ay"></div   >{ %i fs   pe       ak  er   .r   ibb       on                                                     !=null%         }<ulclass="ribbo                          
+                   n-   wr apper">{%   fo rr ib   bo      ni   ns   pe   ake       r.                                                     ribbon%        }<liclass="{{rib                           
+                   bo   n[ "a     bb   r" ]| do   wn     ca    se   }}   "><       pc                                                     lass="r       ibbonabbr">{{rib                            
+                   bon["ab br"  ] }}   </ p> <p   cl    ass="r  ib bon  full- ti  tle                                                     ">{{rib       bon["title"]}}</                            
+                   p></li   >{%en df   or %} </   u     l>{%en   dif%   }{%if site.s                                                       howSe        ssions%}<figca                              
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+ption><h2class="name">{{speaker.name}}<span>{{speaker.surname}}</span></h2><pclass="position">{{speaker.company}}</p></figcaption>{%endif%}</figure></div><divclass="lily-bottom"><ulclass="slider">
+{%assignsessionsNumber=0%}{%ifsite.showSessions%}{%forsessioninsite.data.sessions%}{%forsession_speakerinsession.speakers%}{%ifsession_speaker==speaker.id%}{%assignsessionsNumber=sessionsNumber|pl
+us:1%}<liclass="titleslider-itemanimatedfadeInRighthidden">{{session.title}}</li>{%endif%}{%endfor%}{%endfor%}{%else%}<h2class="name">{{speaker.name}}<span>{{speaker.surname}}</span></h2><pclass="
+position">{{speaker.company}}</p>{%endif%}</ul><ahref="#"class="slider-next-item{%ifsessionsNumber<2%}hidden{%endif%}">Next</a></div></div></div>{%endfor%}</div><ahref="{{site.c4pUrl}}"class="btnb
+tn-primarywaves-effectwaves-buttonwaves-lightwaves-float"target="_blank">Becomeaspeaker</a></div></div></section><!--EndSpeakersList--><!--BeginFooter--><footerid="footer"class="footer"><divclass=
+"row"><divclass="pull-leftcol-md-6col-xs-6"><divclass="g-plusone"data-size="medium"data-annotation="inline"data-width="300"data-href="{{site.url}}"></div></div><divclass="logologo-footerlogo-grayp
+ull-right"></div></div><divclass="row">{%forblockinsite.footerBlocks%}{%assigncolWidth=12|divided_by:forloop.length%}<divclass="col-md-{{colWidth}}col-xs-6"><h5>{{block.title}}</h5><ul>{%forlinkEl
+ementinblock.links%}<li><ahref="{%iflinkElement.permalink!=null%}{{linkElement.permalink|prepend:site.baseurl}}{%else%}{{linkElement.link}}{%endif%}"{%iflinkElement.link!=null%}target="_blank"{%en
+dif%}>{{linkElement.text}}</a></li>{%endfor%}</ul></div>{%endfor%}</div><divclass="row"><divclass="col-md-6col-xs-12"><ulclass="social-links">{%forsocialinsite.socialLinks%}<li><ahref="{%ifsocial.
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                          p                         
+                                                                                                                                                                          e                         
+                                                                                                                                                                          r                         
+                                                                                                                                                                          m                         
+                                                                                                                                                                          a                         
+                                                                                                                                                                          l                         
+                                                                                                                                                                          i                         
+                                                                                                                                                                          n                         
+                                                                                                                                                                          k                         
+                                                                                                                                                                          !                         
+                                                                                                                                                                          =                         
+                                                                                                                                                                          n                         
+                                                                                                                                                                          u                         
+                                                                                                                                                                          l                         
+         l%}{{soci                                                                                                                                                        a                         
+         l.permalin                                                                                                                                                       k                         
+          |prepend:                                                                                                                                                       s                         
+          ite.baseur                                                                                                                                                      l                         
+           }}{%else%             }{{so cial     .lin    k}}{%e             ndif%                                                                                          }                         
+            "target="           _blank "><svg class=    "iconic            on-{{           soc                                                                           ial                        
+            .icon}}"vi          ewBox= "00303 2"><us    exlink: href="{ {site.b  aseu rl}}/img/                                                                          spr                        
+             ites/spri         tes .sv g#  icon- {{s    oci al.icon}}"></use></svg></a></li>{%e                                                                          ndf                        
+              or%}</ul>        </d iv> </  div>< divc   las  s="row"><!--Pleasedon'tdelete thi                                                                           sli                        
+              ne--><div        cla ss= "c  ol-md-6"><   pcl ass="copy righ t">  &copy;2014-201                                                                           5Ba                        
+               sedon<ahr        ef="ht tps:// github.   com/gdg-x/zep peli n"t  arget="_blank">                                                                         Proje                       
+               ctZeppelin       </a>.D esigne dandcre   atedby  <ahre f="  htt  ps://plus. goog                                                                        le.com/                      
+                +OlehZasa         dny  y/a      bou               t                    "     t                                                                         arget="                      
+                _blank">Ol                                                                                                                                             ehZasad                      
+                 nyy</a>&m                      i dd          ot     ;                                                                                                  <ahre                       
+                f="http:/       /lviv           .gdg         .org. ua"ta rge   t="_                                                                                      bla                        
+                nk">GDGLv       iv  </  a>    .Runb  yth        eD ev Fe s t   B                                                                                         erl                        
+  i            nTeam.</p        ></div ></div></footer><!-      -E n   d   F   oote                                                                                      r--                        
+  ><          !--AboutHa        ckathonS  ecti  on--><  se     ct  i   o   n   id="                                                                                      abo                        
+  ut          -hackatho         n"  class="abo  ut-hac  ka    tho  n   "   >      <d                                                                                     ivc                        
+  la         ss="conten         t-  wrap    pe  r"><di  vc   las   s  ="   c      ol                                                                                     -md                        
+  -8         col-md-of          fset-2 "><h3>{  {site.  ab   outHa ckath onTitle}}<                                                                                      /h3                        
+  >{        %forrowin                    s                           i          t                                                                                        e.h                        
+  ac       kathonRows                                                                                                                                                    %}{                        
+  %a       ssignchec                                                                                                                                                     k=f                        
+  or      loop.index                                                                                                                                                     0|m                        
+  od     ulo:2%}<di                                                                                                                                                      vcl                        
+  as     s="hackat                                                                                                                                                       hon                        
+  -r                                                                                                                                          ow                         {%i                        
+ fch                                                                                                                                          e        c                 k==                        
+ 0 %                                                                                                                                }        f         l                 oat                        
+ -le               ft                                                                                                            {  %      else%       }                 flo                        
+ at-               r                                                                                      i                      gh t      {%end       i                 f%}                        
+ c o               l-                        md                              -                            1                      2" ><     divcl      ass                ="h                        
+ ack               at                        hon                             -i                          mg-                     wr ap     peran      ima                ted                        
+ hid               in                                      g"dat                         a             -animat                   io n=     "{%if      che                ck=                        
+=0%}f              ad                       eInL        e ft{%else         %}fa          d             eInRigh                   t{%en     dif%}      "da                ta-                        
+ dela              y=                      "0"><        imgclass="i        mg-re        spon           sive"src                  ="{{s     ite.b      ase                url                        
+ }}/               im                      g/hac        kathon/{{ro        w.ima        ge}}           "alt="Ha                  ckath     on"><      /di        v       ><d         ivclas         
+ s="h              ac             k        athon        -detailsani        mated  hiding"data-anim  a  tion="{% i               fcheck     ==0%}      fad        eI      nRi        ght{%els        
+ e%}f              ad           eInL      eft{%endif%}"data-delay="0"><h4>{{row.title}}</h4><p>{{r ow.details}} </              p></di     v></d     iv>{%      end      for       %}</div></   div 
+ > </      sec     ti         on><!--     EndAboutHackathonSection--><headerid="top-header"class=" top-header"><di              vclass=    "overl    aywhi      te-s     oli d">< /div><svgid=  "men
+ u-tr   igger"cl   as     s="menu-trig    gericonicon-menuvisible-xs"viewBox="003 232"><usexlink:h ref="{{site.bas             eurl}}/i    mg/spr    ites/      sprit    es. svg# icon-menu">< /use>
+ <  / svg><ahref= "{{    site.baseurl}}/"id="logo-header"class="logo-header"><di  v cl as  s= " lo gologo-light ">             </div></a><navclass="st-menu  st-effect"i d=" menu "><divclass="logo-
+n avbarlogologo-darkvisible-xs"></div><ul>{%fornavigationLinkinsite.navigationLi  n ks %}  <l i >< aclass="{%ifnav       i     gationLink.permalink!=nullandpage.permali nk==navigationLink.permalin
+k%}current{%endif%}"href="{%ifnavigationLink.permalink!=null%}{{navigationLink.p  e rm al  in k |p repend:site.base     ur     l}}{%else%}{{navigationLink.link}}{%endif%}"{%ifnavigationLink.link!=
+n ull%}target="_blank"{%endif%}>{{navigationLink.text}}</a></li>{%endfor%}</ul><u l id ="  bo t to m-navlinks"clas    s="bottom-navlinksvisible-xs">{%forbottomNavigationLinkinsite.bottomNavigation
+Links%}<li><ahref="{%ifbottomNavigationLink.permalink!=null%}{{bottomNavigationLi n k. pe  rm a li nk|prepend:site .baseurl}}{%else%}{{bottomNavigationLink.link}}{%endif%}"{%ifbottomNavigationLink
+.link!=null%}target="_blank"{%endif%}>{{bottomNavigationLink.text}}</a></li>{%endfor%}</ul>{%forrightNavigationButtoninsite.rightNavigationButtons%}<ahref="{%ifrightNavigationButton.permalink!=nul
+l%}{{rightNavigationButton.permalink|prepend:site.baseurl}}{%else%}{{rightNavigationButton.link}}{%endif%}"class="right-nav-buttonright-nav-button-hiddenbtnbtn-primarywaves-effectwaves-buttonwaves
+-lightwaves-floatpull-righthidden-xshidden-sm"{%ifrightNavigationButton.link!=null%}target="_blank"{%endif%}>{{rightNavigationButton.text}}</a>{%endfor%}</nav></header><!--BeginScheduleSection--><
+sectionid="schedule"class="schedule"><divclass="content-wrapper">{%fordayinsite.data.schedule%}<divclass="schedule-tablecol-lg-8col-md-10col-md-offset-1"><h4class="schedule-table-heading">{{day.da
+teReadable}}</h4><divclass="timeslottrack-headerstick-header"><divclass="track-header-label">Day{{forloop.index}}</div><divclass="timeslot-elementsflexbox-wrapper">{%fortrackinday.tracks%}{%assign
+trackColWidth=12|divided_by:forloop.length%}<divclass="track-header-slotcol-md-{{trackColWidth}}flexbox-item-heighthidden-xs"><h5class="track-header-title">{{track.title}}</h5></div>{%endfor%}<div
+class="track-header-slotcol-xs-12visible-xs"><h5class="slot-detailtrack-header-title"></h5></div></div></div>{%fortimeslotinday.timeslots%}<divclass="timeslot"itemtype="http://schema.org/subEvent"
+><divclass="timeslot-label"><timeclass="start-time"itemprop="startDate"datetime="{{day.dateReadable}}T{{timeslot.startTime}}">{%assignstartTime=timeslot.startTime|split:":"%}{{startTime[0]}}<span>
+{{startTime[1]}}</span></time><timeclass="end-time"itemprop="endDate"datetime="{{day.dateReadable}}T{{timeslot.endTime}}">{%assignendTime=timeslot.endTime|split:":"%}{{endTime[0]}}<span>{{endTime[
+1]}}</span></time></div><divclass="timeslot-elementsflexbox-wrapper">{%forslotintimeslot.sessionIds%}{%assignslotColWidth=12|divided_by:forloop.length%}{%assignslotIndex=forloop.index0%}{%ifslot!=
+404%}{%forsessioninsite.data.sessions%}{%ifslot==session.idandsession.service==null%}<divid="session-{{session.id}}"class="slotcol-md-{{slotColWidth}}col-xs-12flexbox-item-height"data-slot-detail=
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                          "                         
+                                                                                                                                                                          {                         
+                                                                                                                                                                          {                         
+                                                                                                                                                                          d                         
+                                                                                                                                                                          a                         
+                                                                                                                                                                          y                         
+                                                                                                                                                                          .                         
+                                                                                                                                                                          t                         
+                                                                                                                                                                          r                         
+                                                                                                                                                                          a                         
+                                                                                                                                                                          c                         
+                                                                                                                                                                          k                         
+                                                                                                                                                                          s                         
+                                                                                                                                                                          [                         
+                                                                                                                                                                          s                         
+                                                                                                                                                                          l                         
+                     otIn  dex].       titl       e}}"da                  ta-tog                                                                                          g                         
+                   le="mod al"data    -target     ="#sessi                onDeta               il-                                                                        {                         
+                  {session .id}}"><  divclas      s="color   -li  ne"  style="ba  ckg     rou  nd:{                                                                       {                         
+                  day.   t rack s[slotIn   d      ex]  .col or}}"></d  iv><di    vclass ="slot-conte                                                                     nt"                        
+                  sty le="borde r-right- colo     r:{  {day.tracks[sl  otIndex].color}}"><h5class="                                                                      slo                        
+                  t-t itle"item  prop=" name"     >{{  session.title}}</h 5><spanclass="slot- lang                                                                       uag                        
+                  e"> {{session .langua ge|up     cas  e}}</span><ulclass ="slot-speakers">{%forsp                                                                       eak                        
+                  erin site.dat a.speake  rs%     }{%  for session _speak eri   nsessio   n.speake                                                                       rs%                        
+                  }{%ifsession_spea ker==spea     ker.id%} <liitem  prop  ="p   erforme r"><divclass                                                                    ="spe                       
+                   aker-imgflow-img  img-circ     le"styl   e="bac  kgro  und    -image :url({ {site                                                                   .baseur                      
+                    l|appe nd:'/i      mg/pe      ople/      '|ap    pe   nd:      spe   ake    r.t                                                                    humbnai                      
+                                                                                                                                                                       lUrl}})                      
+                                                                                                                                                                       "></di                       
+                                       v> <p              c       l                                                                                                      ass                        
+                   ="spea              ke r-            name">  {{spe  aker.   name}}                                                                                    {{s                        
+  p                ea  ker             .s               ur  na  me }}< spanc   lass=                                                                                     "sp                        
+  ea               ke   r-  posi  tion">{ {s peake          r. co   mp   any   }}                                                                                        </s                        
+  pa               n></p>< /li >{ %endif% }{ %endfo         r% }{   %e   ndf   or%}<                                                                                     /ul                        
+  ><               /div><  /d   iv>{   %e ls if   s        lot ==   se   ssi   on.ida                                                                                    nds                        
+  es               si   on .service!   =n ul l%   }<      div  cl   as   s="       sl                                                                                    otc                        
+  ol               -m   d- {{slot Co   lW id th   }}     col   -x   s-   12s       er                                                                                    vic                        
+  e-               sl   ot fl     ex   bo x- it   em    -he    igh  t"   dat       a-                                                                                    slo                        
+  t-               detail= "{{sessio   n. pl ac   e}    }"><di  vclas   s="co lor-lin                                                                                    e">                        
+  </               div><     divc  l   as s= "s   l     ot-con   ten    t"><h  5cla                                                                                      ss=                        
+  "s                                                                                                                                                                     lot                        
+  -t                                                                                                                                                                     itl                        
+  e"                                                                                                                                          it                         emp                        
+ rop                                                                                                                                          =        "                 nam                        
+ e "                                                                                                                                >        {         {                 ses                        
+ sio               n.                                                                                                            t  i       tle}       }                 </h                        
+ 5>{               %                                                                                      i                      fs e      ssion       .                 des                        
+ c r               ip                        ti                              o                            n                      != nu     ll%}<      pcl                ass                        
+ ="s               er                        vic                             e-                          des                     cr ip     tion"      >{{                ses                        
+ sio               n.                                      descr                                        iptio                    n} }<     /p>{%      end                if%                        
+}</di              v>                       </d         i v>{%end           if%                        }{%endf                   or%}{     %else      %}<                div                        
+ clas              s=                      "slot        col-md-{{sl        otCol        Widt           h}}hidde                  n-xsb     lank-      col                fle                        
+ xbo               x-                      item-        height"></d        iv>{%        endi           f%}{%end                  for%}     </div      ></        d       iv>         {%endf         
+ or%}              </             d        iv>{%        endfor%}</d        iv></  section><!--EndS  c  heduleSe c               tion--     ><!--      Pri        ze      sSe        ction-->        
+ <sec              ti           onid      ="prizes"class="prizes"><divclass="con  tent-wrapper"><d iv class="co l-              md-8co     l-md-     offse      t-2      "><       h3>{{site.   pri 
+ z es      Tit     le         }}</h3>     {%forprizeinsite.prizes%}{%assigncolWidth=12|divided_by: forloop.length%              }{%assi    gnchec    k=for      loop     .in dex| modulo:2%}<d  ivcl
+ ass=   "prizeco   l-     md-{{colWidt    h}}col-xs-{{colWidth}}animatedhiding"da ta-animation="{% ifforloop.index             ==1%}fad    eInLef    t{%el      siffo    rlo op.i ndex==forloo p.len
+ g  t h%}fadeInRi ght    {%else%}fadeInDown{%endif%}"data-delay="{%ifcheck==0%}0  { %e ls  e% } 50 0{%endif%}"> <h             4>{{prize.title}}</h4><divcl  ass="prize- img -wra pper"><imgclass="i
+m g-responsive"src="{{site.baseurl}}/img/hackathon/{{prize.image}}"alt="Hackatho  n "> </  di v >< p>{{prize.info}       }     </p></div>{%endfor%}</div></div></section ><!  -- EndPrizesSection-->
+<scripttype="application/ld+json">[{"@context":"http://schema.org","@type":"Even  t ", "n  am e ": "{{site.title}}"     ,"     description":"{{site.description}}","image":"{{site.socialImageSrcGoo
+g lePlus|prepend:site.baseurl|prepend:site.url}}","url":"{{site.url}}","startDate " :" {{  si t e. eventStartTime}    }","doorTime":"{{site.eventDoorTime}}","endDate":"{{site.eventEndTime}}","loca
+tion":{"@type":"Place","name":"{{site.eventLocationName}}","sameAs":"{{site.event L oc at  io n Li nk}}","address" :{"@type":"PostalAddress","streetAddress":"{{site.eventStreetAddress}}","addressL
+ocality":"{{site.eventAddressLocality}}","addressRegion":"{{site.eventAddressLocalityRegion}}","postalCode":"{{site.eventPostalCode}}","addressCountry":"{{site.eventAddressCountry}}"},"geo":{"@typ
+e":"GeoCoordinates",{%assigncoordinates=site.eventPlaceCoordinates|split:","%}"latitude":"{{coordinates[0]}}","longitude":"{{coordinates[1]}}"}},//Notsupportedyet//"organizer":{//"@type":"Organiza
+tion",//"name":"{{site.organizerName}}",//"alternateName":"{{site.organizerAlternateName}}",//"description":"{{site.organizerDescription}}",//"logo":"{{site.organizerLogo|prepend:site.baseurl|prep
+end:site.url}}",//"email":"{{site.organizerEmail}}",//"sameAs":"{{site.organizerLink}}"//},"subEvent":{"@type":"Event","name":"{{site.hackathonTitle}}","description":"{{site.hackathonRows[0].detai
+ls}}","image":"{{site.socialImageSrcGooglePlus|prepend:site.baseurl|prepend:site.url}}","url":"{{site.url|append:site.baseurl}}/hackathon/","startDate":"{{site.hackathonStartTime}}","doorTime":"{{
+site.hackathonDoorTime}}","endDate":"{{site.hackathonEndTime}}","location":{"@type":"Place","name":"{{site.hackathonLocationName}}","sameAs":"{{site.hackathonLocationLink}}","address":{"@type":"Po
+stalAddress","streetAddress":"{{site.hackathonStreetAddress}}","addressLocality":"{{site.hackathonAddressLocality}}","addressRegion":"{{site.hackathonAddressLocalityRegion}}","postalCode":"{{site.
+hackathonPostalCode}}","addressCountry":"{{site.hackathonAddressCountry}}"},"geo":{"@type":"GeoCoordinates",{%assignhackathonCoordinates=site.hackathonPlaceCoordinates|split:","%}"latitude":"{{hac
+kathonCoordinates[0]}}","longitude":"{{hackathonCoordinates[1]}}"}}},"offers":[{%forticketsOfferinsite.ticketsOffers%}{"@type":"Offer","name":"{{ticketsOffer.name}}","url":"{{ticketsOffer.buyButto
+nLink}}","price":"{{ticketsOffer.price}}","priceCurrency":"{{ticketsOffer.priceCurrency}}","validFrom":"{{ticketsOffer.validFrom}}","validThrough":"{{ticketsOffer.validThrough}}"}{%ifforloop.index
+!=forloop.length%},{%endif%}{%endfor%}],"performer":[{%forspeakerinsite.data.speakers%}{"@type":"Person","name":"{{speaker.name}}{{speaker.surname}}","image":"{{site.url|append:site.baseurl|append
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                          :                         
+                                                                                                                                                                          '                         
+                                                                                                                                                                          /                         
+                                                                                                                                                                          i                         
+                                                                                                                                                                          m                         
+                                                                                                                                                                          g                         
+                                                                                                                                                                          /                         
+                                                                                                                                                                          p                         
+                                                                                                                                                                          e                         
+                                                                                                                                                                          o                         
+                                                                                                                                                                          p                         
+                                                                                                                                                                          l                         
+                                                                                                                                                                          e                         
+                                                                                                                                                                          /                         
+                                                                                                                                                                          '                         
+                                                                                                                                                                          |                         
+                                                                                                                                                                          a                         
+                                                   ppen                    d:spe                                                                                          a                         
+                   ker.thu mbnailU    rl}}","     jobTitl                 e":"{{               spe                                                                        a                         
+                  ker.titl e}}","wo  rksFor"      :{"@type    ":          "Organ   iz     at   ion                                                                        "                         
+                  ,"na     me"  :"{{spea          ker  .co  mpany }}"  },"sam    eAs":" {{speaker.s                                                                      oci                        
+                  al[      0].   link}}"          }{%  ifforloop.inde  x!=forloo p.leng th%},{%endi                                                                      f%}                        
+                  {%e ndfor%}]   ,"even tStat     us"   :"EventSch eduled ","typicalAgeRange  ":"1                                                                       6+"                        
+                  }]< /script>   <!--Be ginPa     rtn  ersSection- -><sec tionid="partners"class="                                                                       par                        
+                  tne   rs"><d  ivclass=  "co     nte  nt- wrapper "><div cla   ss="col   -lg-10co                                                                       l-l                        
+                  g-offset-1"><h3>{  {site.or     ganizers Title}}  </h3  >{%   fororga nizerinsite                                                                     .data                       
+                   .organizers%}<h5  >{{organ     izer.gr   oup}}<  /h5>  <ul    class= "list- inlin                                                                   e">{%fo                      
+                     relem entin       organ       ize        r.     el    e       men   ts%    }<l                                                                    i{%ifel                      
+                                                                                                                                                                       ement.w                      
+                                                                                                                                                                       idth!=n                      
+                                                                                                                                                                        ull%}                       
+                   style=              "w id            th:{{   eleme   nt.    width                                                                                     }};                        
+  "                {%  end             if               %   }>  <a  hr  ef=    "{                                                                                        {el                        
+ eme               nt   .l  ink}   }"targ et ="_bl          an k"   ><    i    mg                                                                                        src                        
+  ="               {{   si te.bas eurl}}/ im g/orga         ni ze   rs    /    {{el                                                                                      eme                        
+  nt               .image  Ur   l}}"   ti tl e=   "        {{e le   me    n    t.des                                                                                     cri                        
+  pt               io   n} }"alt="{{   el em en   t       .na  me   }}    "        ><                                                                                    /a>                        
+  </               li   >{ %e     nd   fo r% }<   /       ul   >{   %e    n        df                                                                                    or%                        
+  }<               h3   >{ {s     it   e. pa rt   n      er     s   Ti    t        le                                                                                    }}<                        
+  /h               3>{%for partne ri   ns it e.   d     ata.pa  rtner   s%}<h 5>{{pa                                                                                     rtn                        
+ er.               group     }}</  h    5 >  <    u     lclass   ="l    ist-i  nlin                                                                                      e">                        
+ {%f                                                                                                                                                                     ore                        
+ lem                                                                                                                                                                     ent                        
+ inp                                                                                                                             a           rtn                         er.                        
+ ele                                                                                                                                m        en        t                 s%}                        
+ <li                                                                                                                             {  %        i         f                 ele                        
+ men               t.                                                                                     w                      id t      h!=nu       l                 l%}                        
+ sty               le                                                                                     =                      "w i      dth:{       {                 ele                        
+ m e               nt                        .w                             id                            t                      h} };     "{%en      dif                %}>                        
+ <ah               re                        f="             {              {el                          eme                     nt .l     ink}}      "ta                rge                        
+ t="               _b                        l             ank">            <            i             mgsrc="                   {{ si     te.ba      seu                rl}                        
+}/img              /p                       artn        e rs/{{ele         ment          .             imageUr                   l}}"t     itle=      "{{                ele                        
+ment.              de                      scrip        tion}}"alt=        "{{el        emen           t.name}}                  "></a     ></li      >{%e               ndf                        
+ or%               }<                      /ul>{        %endfor%}<a        href=        "{{s           ite.c4sp                 onsors     Url|p      repe      nd       :si         te.bas         
+ eurl              }}            "cl      ass="b        tnbtn-prima       rywave  s-effectwaves-bu  t  tonwaves -               lightw     aves-      floa       t"      >{{        site.par        
+ tner              sC           4spo      nsorsButton}}</a></div></div></section><!--EndPartnersSe ction--><scr ip              t>(fun     ction     (i,s,      o,g      ,r,       a,m){i['Go   ogl 
+ eAna      lyt     ic         sObject     ']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(argu ments)},i[r].l=              1*newDa    te();a    =s.cre     ateE     lem ent( o),m=s.getEl  emen
+ tsBy   TagName(   o)     [0];a.async=    1;a.src=g;m.parentNode.insertBefore(a,m)})(window,docume nt,'script','//             www.goog    le-ana    lytic      s.com    /analytics.js','ga'); ga('c
+re at e','{{site. goog  leAnalyticsTrackingId}}','{{site.googleAnalyticsSiteUrl}}') ;g a(  's e nd ','pageview');<             /script><!--BeginTicketsSect  ion--><sectioni d="tickets"class="ticke
+ts"><divclass="content-wrapper"><divclass="col-lg-8col-md-10col-lg-offset-2col-md-o ff se  t- 1 "> <h3>{{site.tick       e     tsTitle}}</h3>{%forticketsOfferinsite.ticketsOffers%}{%assigncolWidth
+=12|divided_by:forloop.length%}{%assigncheck=forloop.index|modulo:2%}<divclass="col -m d-  {{ c ol Width}}col-sm-{{     co    lWidth}}pricing-col{%ifticketsOffer.featured!=null%}pricing-col-featur
+e d{%endif%}animatedhiding"data-animation="{%ifforloop.index==1%}fadeInLeft{%elsiff or lo  op . in dex==forloop.len gth%}fadeInRight{%else%}fadeInDown{%endif%}"data-delay="{%ifcheck==0%}0{%else%}5
+00{%endif%}">{%ifticketsOffer.ribbon!=null%}<divclass="pricing-ribbon">{{ticketsOff er .r  ib b on }}</div>{%endif%}<divclass="pricing-header"><pclass="title">{{ticketsOffer.name}}</p><pclass="pri
+ce">{{ticketsOffer.price}}<spanclass="currency">{{ticketsOffer.priceCurrency}}</span></p></div><divclass="pricing-content"><ul>{%forlistIteminticketsOffer.ticketContentList%}<li>{{listItem}}</li>{
+%endfor%}</ul>{%ifticketsOffer.soldOut==true%}<spanclass="buttondisabled">{{ticketsOffer.soldOutText}}</span>{%elsifticketsOffer.disabled!=true%}<aclass="button"href="{{ticketsOffer.buyButtonLink}
+}"target="_blank">{{ticketsOffer.buyButtonText}}</a>{%else%}{%assignticketValidFrom=ticketsOffer.validFrom|split:"T"%}<spanclass="buttondisabledfallback">Ticketsaleswillbeginon{{ticketValidFrom[0]
+|date:"%-d%B%Y"}}{{ticketValidFrom[1]}}</span>{%endif%}</div></div>{%endfor%}</div></div></section><!--EndTicketsSection--><!--BeginTopSection--><sectionid="top-section"class="top-sectionimage-sec
+tion{%ifpage.image%}enable-overlay{%endif%}"style="{%ifpage.image%}background-image:url('{{site.baseurl}}/img/sections-background/{{page.image}}');{%elsifpage.color%}background:{{page.color}}{%end
+if%}"><divclass="overlaygradient-overlay"></div>{%includenavigation.html%}<divclass="content-wrapper"><divclass="jumbotrontext-left"><divclass="animatedhiding"data-animation="fadeInLeft"data-delay
+="500"><h1>{{page.title}}</h1></div></div></div></section><!--EndTopSection--><!--BeginHackathonLocationSection--><sectionid="hackathon-location"class="hackathon-location"><divid="canvas-map"class
+="canvas-map"></div><divclass="content-wrapper"><divclass="col-lg-3col-md-4col-sm-6animatedhidinglocation-descriptiontext-left"data-animation="fadeInLeft"data-delay="0">{%ifsite.hackathonLocationN
+ame%}<h5class="location-name">{{site.hackathonLocationName}}</h5>{%endif%}<pclass="location-address">{{site.hackathonStreetAddress}},{{site.hackathonAddressLocality}}</p><divclass="hackathon-time"
+><span>{{site.hackathonTimeTitle}}</span>{%assignstartTime=site.hackathonStartTime|split:"T"%}<time>{{startTime[1]}}</time>-{%assignendTime=site.hackathonEndTime|split:"T"%}<time>{{endTime[1]}}</t
+ime></div><ahref="https://maps.google.com/maps?ll={{site.hackathonPlaceCoordinates|replace:'',''}}&z=17&t=m&hl=en-US&gl=US&mapclient=embed&q={{site.hackathonStreetAddress|replace:'','%20'|replace:
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                          '                         
+                                                                                                                                                                          ,                         
+                                                                                                                                                                          '                         
+                                                                                                                                                                          ,                         
+                                                                                                                                                                          '                         
+                                                                                                                                                                          %                         
+                                                                                                                                                                          2                         
+                                                                                                                                                                          C                         
+                                                                                                                                                                          '                         
+                                                                                                                                                                          }                         
+                                                                                                                                                                          }                         
+                                                                                                                                                                          %                         
+                                                                                                                                                                          2                         
+                                                                                                                                                                          C                         
+                                                                                                                                                                          %                         
+                                                                                                                                                                          2                         
+                      0{                {s        ite.h                   ackath                                                                                          o                         
+                   nAddres sLocali    ty|repl     ace:'',                 '%20'|               rep                                                                        l                         
+                  ace:',', '%2C'}}"  class="      view-on-   map  "ta  rget="_bl  ank     ">{  {sit                                                                       e                         
+                  .vie   w OnMa p}}</a><   /      div  ></d iv></sect  ion><!    --EndH ackathonLoca                                                                     tio                        
+                  nSe      ctio n--><!--          Beg  inStatisticSec  tion--><sectionid="statistic                                                                      "cl                        
+                  ass ="statist  icimag e-sec     tio  nparallax"style="b ackground-image:ur  l({{                                                                       sit                        
+                  e.b aseurl}}/  img/se ction     s-b  ackground/{{site.s tatisticBlockImage}});">                                                                       <di                        
+                  vcla ss="over laysolid  -ov     erl  ay"></div>< divcla ss=   "content  -wrapper                                                                       "><                        
+                  divclass="col-lg- 10col-lg-     offset-1 ">{%ass  igna  nim   ationDe lay=0%}{%for                                                                    stati                       
+                   sticinsite.stati  sticBloc     k%}{%as  signcol  Widt  h=1    2|divi ded_by :forl                                                                   oop.len                      
+                    gth%}<divclas     s="col-     md-{{      colW   idth  }}c     ol-xs -6"><  divc                                                                    lass="c                      
+                                                                                                                                                                       ountera                      
+                                                                                                                                                                       nimated                      
+                                       hi di                                                                                                                            ng"da                       
+                   ta-ani              ma ti            on="f   adeIn  Down"   data-                                                                                     del                        
+  a                y="{{an             im at            ionDel  ay}}"> <divc   lass=                                                                                     "st                        
+ at"               ><   sp  ancl  ass="ti me r"dat          a- fr   om   ="0   "d                                                                                        ata                        
+  -t               o=  "{{ statis tic.cou nt }}">{{         st at   is   tic   .coun                                                                                     t}}                        
+  </               span>{  {s   tati   st ic .s   p        eci al   Ch   ara   cter}}                                                                                    </d                        
+  iv               ><  div class="st   at -i nf   o"      >{{  st   at   ist       ic                                                                                    .in                        
+  fo               }}   </ div><h r>   <p cl as   s=     "sm   al   l"   >{{       st                                                                                    ati                        
+  st               ic   .d et     ai   l} }< /p   ><    /di    v><  /d   iv>       {%                                                                                    ass                        
+  ig               nanimat ionDelay=   an im at   io    nDelay  |plus   :500% }{%assi                                                                                    gnc                        
+  he               ck=for   loop. in   de x| mo   d     ulo:2%   }{%i   fchec  k==0%                                                                                     }<d                        
+ ivc                                                                                                                                                                     las                        
+ s="                                                                                                                                                                     cle                        
+ arf                                                                                                                             i           xvi                         sib                        
+ le-                                                                                                                                x        s">       <                 /di                        
+ v>{                                                                                                                                %        e         n                 dif                        
+ %}{               %e                                                                                     n                      df o      r%}</       d                 iv>                        
+ </d               iv                                                                                     >                      </ s      ectio       n                 ><!                        
+ - -               En                        dS                             ta                            t                      is ti     cSect      ion                -->                        
+ <!-               -B                        egi                            nTi                          cke                     ts 2S     ectio      n--                ><s                        
+ ect               io                        n i           d="t             i c          k              ets"c                    la ss     ="tic      ket                s-2                        
+"><di              vc                       lass        = "content         -wra          p             per"><d                   ivcla     ss="c      ol-                lg-                        
+8col-              md                      -10co        l-lg-offset        -2col        -md-           offset-1                  "><h3     >{{si      te.t               ick                        
+ ets               Ti                      tle}}        </h3><divcl        ass="        tick           ets-tabl                 erowan     imate      dhid      in       g"d         ata-an         
+ imat              io             n       ="fade        InDown"data        -dela  y="0">{%assignan  i  mationDe l               ay=0%}     {%for      tick       et      sOf        ferinsit        
+ e.ti              ck           etsO      ffers%}<divclass="tickets-rowanimatedhiding"data-animati on="fadeInDo wn              "data-     delay     ="{{a      nim      ati       onDelay}}"   ><d 
+ ivcl      ass     ="         row"><d     ivclass="col-sm-6col-xs-12"><pclass="title">{{ticketsOffer.name}}</p>{%i              fticket    sOffer    .addit     iona     lIn fo!= null%}<spanc  lass
+ ="ti   cket-add   it     ional-info">    {{ticketsOffer.additionalInfo}}</span>{%endif%}{%ifticke tsOffer.disable             d!=true%    }{%ass    ignti      cketV    alidTo=ticketsOffer.v alidT
+hr ou gh|split:"T "%}    <spanclass="ticket-additional-info">Before{{ticketValidTo[ 0] |d  at e :" %-d%B%Y"}}{{tic             ketValidTo[1]}}or{{ticketsOf  fer.ticke tsNumber}}tickets</span>{%end
+if%}</div><divclass="col-sm-3col-xs-12"><pclass="price">{{ticketsOffer.price}}{{tic ke ts  Of f er .priceCurrency}       }     </p></div><divclass="col-sm-3col-xs-12">{%ifticketsOffer.soldOut==tru
+e%}<pclass="ticket-sold-out">{{ticketsOffer.soldOutText}}</p>{%elsifticketsOffer.di sa bl  ed ! =t rue%}<spanclass=     "b    ordereddark-borderbutton"><ahref="{{ticketsOffer.buyButtonLink}}"class
+= "waves-effectwaves-button"target="_blank">{{ticketsOffer.buyButtonText}}</a></spa n> {%  el s e% }{%assignticketV alidFrom=ticketsOffer.validFrom|split:"T"%}<pclass="ticket-fallback">Ticketsales
+willbeginon{{ticketValidFrom[0]|date:"%-d%B%Y"}}{{ticketValidFrom[1]}}</p>{%endif%} </ di  v> < /d iv></div>{%assignanimationDelay=animationDelay|plus:250%}{%endfor%}</div><spanclass="tickets-info
+">{{site.ticketsInfo}}</span></div></div></section><!--EndTickets2Section--><!--BeginLocationSection--><sectionid="location-map"class="location-map"><divid="canvas-map"class="canvas-map"></div><di
+vclass="content-wrapper"><divclass="col-lg-3col-md-4col-sm-6col-md-offset-1animatedhidinglocation-descriptiontext-left"data-animation="fadeInLeft"data-delay="0"><divclass="row"><divclass="pull-lef
+t"><h3>{{site.locationBlockTitle}}</h3><ul>{%ifsite.eventLocationName%}<li>{{site.eventLocationName}}</li>{%endif%}<li>{{site.eventStreetAddress}}</li><li>{{site.eventPostalCode}}{{site.eventAddre
+ssLocality}}</li></ul></div><ahref="{{site.baseurl|append:'/logistics/#find-way'}}"class="pull-right"><svgclass="iconicon-direction"viewBox="003232"><usexlink:href="{{site.baseurl}}/img/sprites/sp
+rites.svg#icon-direction"></use></svg></a></div></div></div></section><!--EndLocationSection--><!--BeginTwitterFeedSection--><sectionid="twitter-feed"class="twitter-feedimage-sectionparallax"style
+="background-image:url({{site.baseurl}}/img/sections-background/{{site.tweetsFeedImage}});"><divclass="overlaysolid-overlay"></div><divclass="content-wrapper"><divclass="col-md-8col-md-offset-2"><
+svgclass="icon"viewBox="003032"><usexlink:href="{{site.baseurl}}/img/sprites/sprites.svg#icon-twitter"></use></svg><h3>{{site.tweetsFeedTitle}}<ahref="https://twitter.com/search?q=%23{{site.twitte
+rHashTag}}"target="_blank">#{{site.twitterHashTag}}</a></h3><divid="tweets"class="tweets"></div></div></div></section><!--EndTwitterFeedSection--><!--BeginDirectionDetails--><sectionid="direction-
+details"class="direction-details"><divclass="content-wrapper"><sectionclass="image-sectionstandart-height"style="background-image:url('{{site.baseurl}}/img/sections-background/{{site.directionDeta
+ilsImage}}');"><h3>{{site.directionDetailsTitle}}</h3></section><divclass="row"><divclass="col-lg-10col-lg-offset-1text-left">{%assignanimationDelay=0%}{%forcardinsite.directionDetailsCards%}{%ass
+igncolWidth=12|divided_by:forloop.length%}<divclass="col-md-{{colWidth}}col-xs-12same-heightanimatedhiding"data-animation="fadeInDown"data-delay="{{animationDelay}}"><divclass="card"><h4>{{card.ti
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+                                                                                                                                                                          t                         
+                                                                                                                                                                          l                         
+                                                                                                                                                                          e                         
+                                                                                                                                                                          }                         
+                                                                                                                                                                          }                         
+                                                                                                                                                                          <                         
+                                                                                                                                                                          /                         
+                                                                                                                                                                          h                         
+                                                                                                                                                                          4                         
+                                                                                                                                                                          >                         
+                                                                                                                                                                          <                         
+                                                                                                                                                                          p                         
+                                                                                                                                                                          >                         
+                                                                                                                                                                          {                         
+                                                                                                                                                                          {                         
+                                                                                                                                                                          c                         
+                                                   ard.                    infor                                                                                          m                         
+                    ation} }</p></    div></d     iv>{%as                 signan               ima                                                                        t                         
+                   ionDela y=animat  ionDela      y|plus:5                00%}{%               end                                                                        f                         
+                  or%}  {% forwideCardins  i      te.  dir  ectio nDe  tailsW    ideCar ds%}<divcla                                                                      ss=                        
+                  "co      l-m   d-12col          -xs  -12animatedhid  ing"data- animat ion="fadeIn                                                                      Dow                        
+                  n"d ata-dela   y="0"> <divc     las   s="cardque stions "><h4>{{wideCard.t  itle                                                                       }}<                        
+                  /h4 >{%forsu   bCardi nwide     Car  d.subCards% }{%ass ignwideCardColWidth=12|d                                                                       ivi                        
+                  ded   _by:fo  rloop.le  ngt     h%}  <di vclass= "col-m d-{   {wideCa   rdColWid                                                                       th}                        
+                  }col-xs-12"><h5>{ {subCard.     title}}< /h5> <u  l>{%  for   link El ementinsubC                                                                     ard.l                       
+                   inks%}<li><ahref  ="{%ifli     nkEleme   nt.per  mali  nk!    =null% }{{lin kElem                                                                   ent.per                      
+                    malink |prepe     nd:site     .base      url}    }{   %el     se%}  {{li    nkE                                                                    lement.                      
+                                                                                                                                                                       link}}{                      
+                                                                                                                                                                       %endif%                      
+                                                                                                                                                                        }"{%                        
+                   iflink              El em            ent.l    ink!   =nu    ll%}t                                                                                     arg                        
+  e                t="_bla             nk               "{ %en  di f%  }>{{    linkE                                                                                     lem                        
+  en               t.   te   xt}   } </a> <  / li>          {% en   df    o    r%                                                                                        }</                        
+  ul               ><   /d iv>{%e ndfor%} </ div></         di v>   {%    e    ndfo                                                                                      r%}                        
+  </               div></  di   v></   di v> </   s        ect io   n>    <    !--En                                                                                     dDi                        
+  re               ct  ion Details--   >< !- -V   e        nu  eS   ec    t        io                                                                                    n--                        
+  ><               se   ct ionid= "v   en ue ">   <       di   vc   la    s        s=                                                                                    "co                        
+  nt               en   t- wr     ap   pe r" ><   d      iv    cl   as    s        ="                                                                                    col                        
+  -l               g-10col -lg-of fs   et -1 ">   <     h3>{{s  ite.v   enueB lockTi                                                                                     tle                        
+  }}               </h3>     <div  c   la ss ="   r     owvenu   e-r    ow"><  divc                                                                                      las                        
+  s=                                                                                                                                                                     "co                        
+  l-                                                                                                                                                                     md-                        
+  8c                                                                                                                                          o                          l-s                        
+ m-8                                                                                                                                          v        e                 nue                        
+ - c                                                                                                                                o        l         "                 ><d                        
+ ivc               la                                                                                                               s        s="       v                 enu                        
+ e-e               l                                                                                      e                      m- w      rappe       r                 "><                        
+ d i               vc                         l                              a                            s                      s= "v     enue-      ele                mim                        
+ age               -s                        ect                             io                          nve                     nu e-     big-e      lem                ven                        
+ ue-               im                          g           anim               a                         tedhi                    di ng     "data      -an                ima                        
+tion=              "f                                     adeIn"                                       data-de                   la y=     "0"st      yle                ="b                        
+ ackg              ro                      und-i        mage:url({{        site.         ba            seurl}}/                  img/v     enue/      {{si               te.                        
+ ven               ue                      BigIm        age}})"></d        iv></        div>           </div><d                  ivcla     ss="c      ol-                md-          4col-         
+ sm-               4v             e        nue-c        olvenue-sma        ll-co  l"><divclass="ve     nue-elem                 -wrapp     ercol      -md        -1      2co        l-sm-12c        
+ ol-x              s-            6">      <divclass="venue-elemimage-sectionvenu  e-small-elemvenu e- imganimat ed              hiding     "data     -anim       at      ion       ="fadeIn"d    at 
+ a -d              el          ay="15     0"style="background-image:url({{site.baseurl}}/img/venue /{{site.venu eS              mallIma    ge1}}     )"></d     iv><     /di    v  ><divclass=  "ven
+ ue-e    lem-wra   pp      ercol-md-12    col-sm-12col-xs-6"><divclass="venue-ele mvenue-small-ele mvenue-textanim             atedhidi    ng"dat    a-ani      matio    n=" fade In"data-dela y="0"
+ >  <  h5>{{site. ven    ueTitle}}</h5>{% forfeatureinsite.venueFeatures%}<
